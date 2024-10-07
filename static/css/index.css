@@ -13,6 +13,13 @@ body {
     margin-bottom: 5px;
 }
 
+.link-block-non a {
+  pointer-events: none;
+  background-color: antiquewhite;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 .dnerf {
   font-variant: small-caps;
 }

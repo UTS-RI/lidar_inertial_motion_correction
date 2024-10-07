@@ -104,18 +104,18 @@
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
-              <span class="link-block">
-                <a href="https://ssl.linklings.net/conferences/acra/acra2023_proceedings/views/includes/files/pap125s2.pdf"
-                   class="external-link button is-normal is-rounded is-dark">
+              <span class="link-block-non">
+                <a href="TBA"
+                   class="external-link button is-normal is-rounded is-light">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                   </span>
                   <span>Paper</span>
                 </a>
               </span>
-              <span class="link-block">
-                <a href="https://arxiv.org/abs/2310.13273"
-                   class="external-link button is-normal is-rounded is-dark">
+              <span class="link-block-non">
+                <a href="TBA"
+                   class="external-link button is-normal is-rounded is-light">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
                   </span>
@@ -136,7 +136,7 @@
               -->
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/UTS-RI/dynamic_object_detection"
+                <a href="https://github.com/UTS-RI/2fast2lamaa"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -145,17 +145,15 @@
                   </a>
               </span>
               <!-- Dataset Link. -->
-              <!--
-              <span class="link-block">
-                <a href="https://github.com/google/nerfies/releases/tag/0.1"
-                   class="external-link button is-normal is-rounded is-dark">
+              <span class="link-block-non">
+                <a href="TBA"
+                   class="external-link button is-normal is-rounded is-light">
                   <span class="icon">
                       <i class="far fa-images"></i>
                   </span>
                   <span>Data</span>
                   </a>
               </span>
-              -->
             </div>
           </div>
         </div>
@@ -176,9 +174,9 @@
       <img src="./static/images/teaser.png"
             class="teaser-image"
             alt="Teaser."/>
-      <h2 class="subtitle has-text-centered">
+      <!--h2 class="subtitle has-text-centered">
         <span class="dnerf">Real-Time Truly-Coupled Lidar-Inertial Motion Correction and Spatiotemporal Dynamic Object Detection
-      </h2>
+      </h2-->
     </div>
   </div>
 </section>
@@ -283,210 +281,41 @@
 </section>
 
 
-<section class="section">
-  <div class="container is-max-desktop">
 
-    <div class="columns is-centered">
-
-      <!-- Visual Effects. -->
-      <!--
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-3">Visual Effects</h2>
-          <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
-          </p>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dollyzoom-stacked.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-      -->
-      <!--/ Visual Effects. -->
-
-      <!-- Matting. -->
-      <!--
-      <div class="column">
-        <h2 class="title is-3">Matting</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
-            </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/matting.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-
-        </div>
-      </div>
-    -->
+<section class="section" id="IROS_vid">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Presentation at IROS 2024</h2>
+    <div class="content has-text-justified">
+      <p>
+        This work will be presented at the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) 2024.
+        The links to the Arxiv paper and the code repository will be available before the conference.
+        Meanwhile, you can watch our short introductory video below.
+      </p>
     </div>
-    <!--/ Matting. -->
-
-    <!-- Animation. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Experiments</h2>
-
-        <!-- Interpolating. -->
-        <!--
-        <h3 class="title is-4">Interpolating states</h3>
-        <div class="content has-text-justified">
-          <p>
-            We can also animate the scene by interpolating the deformation latent codes of two input
-            frames. Use the slider here to linearly interpolate between the left frame and the right
-            frame.
-          </p>
-        </div>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_start.jpg"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-            <p>Start Frame</p>
-          </div>
-          <div class="column interpolation-video-column">
-            <div id="interpolation-image-wrapper">
-              Loading...
-            </div>
-            <input class="slider is-fullwidth is-large is-info"
-                   id="interpolation-slider"
-                   step="1" min="0" max="100" value="0" type="range">
-          </div>
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_end.jpg"
-                 class="interpolation-image"
-                 alt="Interpolation end reference image."/>
-            <p class="is-bold">End Frame</p>
-          </div>
-        </div>
-        <br/>
-        -->
-        <!--/ Interpolating. -->
-
-        <!-- Interpolating. -->
-        <h3 class="title is-4">Urban Dynamic Objects LiDAR (DOALS) Dataset</h3>
-        <div class="content has-text-justified">
-          <p>
-            We tested our method on the <a href="https://projects.asl.ethz.ch/datasets/doku.php?id=doals">Urban Dynamic Objects LiDAR (DOALS) Dataset</a> 
-            and compared it to <a href="https://github.com/ethz-asl/dynablox">Dynablox</a>.
-          </p>
-        </div>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-4 has-text-centered">
-            <img src="./static/images/DOALS_GT.png"
-                  class="interpolation-image"
-                  alt="Interpolation end reference image."/>
-            <p class="is-bold">Ground truth</p>
-          </div>
-          <div class="column is-4 has-text-centered">
-            <img src="./static/images/DOALS_estimation.png"
-                  class="interpolation-image"
-                  alt="Interpolation end reference image."/>
-            <p class="is-bold">Proposed method</p>
-          </div>
-          <div class="column is-4 has-text-centered">
-            <img src="./static/images/DOALS_dynablox.png"
-                  class="interpolation-image"
-                  alt="Interpolate start reference image."/>
-            <p class="is-bold">Dynablox</p>
-          </div>
-        </div>
-        <br/>
-        <!--/ Interpolating. -->
-
-        <!-- Re-rendering. -->
-        <h3 class="title is-4">Dynamic scene and a moving camera (mounted on a robot arm)</h3>
-        <div class="content has-text-justified">
-          <p>
-            We demonstrate how our method can be used to predict dynamic elements a scene with a moving camera.
-          </p>
-        </div>
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="./static/videos/hammer.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <!--/ Re-rendering. -->
-
-        <!-- Dataset. -->
-        <h3 class="title is-4">Dataset</h3>
-        <div class="content has-text-justified">
-          <p>
-            We demonstrate how our method can be used to predict dynamic elements a scene with a moving camera <a href="dataset.html">dataset.html</a>.
-          </p>
-        </div>
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="./static/videos/hammer.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <!--/ Dataset. -->
-
-      </div>
-    </div>
-    <!--/ Animation. -->
-
-
-    <!-- Concurrent Work. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Related Links</h2>
-
-        <div class="content has-text-justified">
-          <p>
-            There's a lot of excellent work that was introduced around the same time as ours.
-          </p>
-          <p>
-            <a href="https://arxiv.org/abs/2304.10049">Dynablox</a> solves the problem by leveraging a voxel map and analysing the free space from the voxels.
-          </p>
-          <!--
-          <p>
-            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
-            both use deformation fields to model non-rigid scenes.
-          </p>
-          <p>
-            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
-          </p>
-          <p>
-            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
-          </p>
-          -->
-        </div>
-      </div>
-    </div>
-    <!--/ Concurrent Work. -->
-
+    <div class="content has-text-centered">
+      <video id="replay-video"
+             controls
+             muted
+             preload
+             playsinline
+             width="75%">
+        <source src="./static/videos/teaser_video.mp4"
+                type="video/mp4">
+      </video>
   </div>
 </section>
-
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@inproceedings{falque2023dynamic,
-      title={Dynamic Object Detection in Range data using Spatiotemporal Normals}, 
-      author={Raphael Falque and Cedric Le Gentil and Fouad Sukkar},
-      booktitle={Australasian Conference on Robotics and Automation, ACRA},
-      year={2023}
-  }
+    <pre><code>@inproceedings{legentil2024undistortion,
+  author={Le Gentil, Cedric and Falque, Raphael and Vidal-Calleja, Teresa},
+  booktitle={2024 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+  title={Real-Time Truly-Coupled Lidar-Inertial Motion Correction and Spatiotemporal Dynamic Object Detection},
+  year={2024},
+  volume={},
+  number={},
+}
 </code></pre>
   </div>
 </section>
@@ -513,8 +342,8 @@
           </p>
           <p>
             This means you are free to borrow the <a
-              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
-            we just ask that you link back to this page in the footer.
+              href="https://github.com/nerfies/nerfies.github.io">source code</a> of the original Nerfies website,
+            we just ask that you link back to that page in the footer.
             Please remember to remove the analytics code included in the header of the website which
             you do not want on your website.
           </p>
